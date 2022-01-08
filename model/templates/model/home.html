@@ -1,0 +1,173 @@
+<html>
+    <head> <title> 
+        Model deployment practice
+    </title></head>
+<body>
+    <h1> Enter the parameters pls! </h1> 
+
+    <form action = "{% url 'model-results' %}" method = "post">
+
+        {% csrf_token %}
+
+        <div class = "form-group">
+            <select class = "form-control" type = "text" required name = "gender" style="width:250px;">
+                <option value = "" selected> Select gender! </option>
+                <option> Male </option>
+                <option> Female </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "SeniorCitizen" style="width:250px;">
+                <option value = "" selected> Senior Citizen? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "Partner" style="width:250px;">
+                <option value = "" selected> Have a partner? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "Dependents" style="width:250px;">
+                <option value = "" selected> Has dependents? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <input type = "number" required placeholder = "tenure in months" name = "tenure" style = "width: 250px;">
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "PhoneService" style="width:250px;">
+                <option value = "" selected> Has phone service? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "MultipleLines" style="width:250px;">
+                <option value = "" selected> Multiple Lines? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "InternetService" style="width:250px;">
+                <option value = "" selected> Internet Service Type </option>
+                <option> Fiber optic </option>
+                <option> No internet service </option>
+                <option> DSL </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "OnlineSecurity" style="width:250px;">
+                <option value = "" selected> Has online security? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+        
+        <div class = "form-group">
+            <select class = "form-control" required name = "OnlineBackup" style="width:250px;">
+                <option value = "" selected> Has online backup? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "DeviceProtection" style="width:250px;">
+                <option value = "" selected> Has device protection? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "TechSupport" style="width:250px;">
+                <option value = "" selected> Has tech support? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "StreamingTV" style="width:250px;">
+                <option value = "" selected> TV streaming services? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "StreamingMovies" style="width:250px;">
+                <option value = "" selected> Movie streaming services? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "Contract" style="width:250px;">
+                <option value = "" selected> Contract type </option>
+                <option> Month-to-month </option>
+                <option> One year </option>
+                <option> Two year </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "PaperlessBilling" style="width:250px;">
+                <option value = "" selected> Paperless Billing? </option>
+                <option> Yes </option>
+                <option> No </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <select class = "form-control" required name = "PaymentMethod" style="width:250px;">
+                <option value = "" selected> Payment Method type </option>
+                <option> Electronic check </option>
+                <option> Mailed check </option>
+                <option> Bank transfer (automatic) </option>
+                <option> Credit card (automatic) </option>
+            </select>
+        </div>
+        <br> <br>
+
+        <div class = "form-group">
+            <input type = "number" required placeholder = "Monthly Charges" name = "MonthlyCharges" style = "width: 250px;">
+        </div>
+        <br> <br>
+
+        <input type = "submit" name = "" value = "Submit!">
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <head> <title> 
+        Model deployment practice
+    </title></head>
+<body>
+    <h1> Results go here! </h1> 
+
+    {% if predicted_class == 0 %}
+        <h2> The customer is <b> unlikely </b> to churn.</h2>
+    {% else %}
+        <h2> The customer is <b> likely </b> to churn!!</h2>
+    {% endif %}
+    <h3> Churn probability is {{ churn_prob }}%</h3>
+</body>
+</html>
